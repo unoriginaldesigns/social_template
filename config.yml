@@ -55,7 +55,7 @@ drush_make_options: "--no-gitinfofile"
 # composer based site deployment strategy.
 build_composer: false
 drupal_composer_path: "{{ config_dir }}/drupal.composer.json"
-drupal_composer_install_dir: "/var/www/drupalvm"
+drupal_composer_install_dir: "/var/www/drupalvm/opensocial"
 drupal_composer_dependencies: []
 
 # Set this to 'true' and 'build_makefile', 'build_composer' to 'false' if you

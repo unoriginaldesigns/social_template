@@ -79,7 +79,41 @@ drupal_major_version: 8
 drupal_domain: "{{ vagrant_hostname }}"
 drupal_site_name: "Drupal"
 drupal_install_profile: standard
-drupal_enable_modules: [ 'devel' ]
+drupal_enable_modules:
+  - admin_toolbar
+  - admin_toolbar_tools
+  - devel
+  - features
+  - features_ui
+  - link_css
+  - address
+  - dynamic_entity_reference
+  - field_group
+  - url_embed
+  - flag
+  - flag_bookmark
+  - flag_follower
+  - group
+  - gnode
+  - crop
+  - image_effects
+  - image_widget_crop
+  - message
+  - addtoany
+  - config_update
+  - embed
+  - entity
+  - private_message
+  - profile
+  - r4032login
+  - token
+  - override_node_options
+  - social_api
+  - social_auth
+  - views_infinite_scroll
+  - like_and_dislike
+  - votingapi
+
 drupal_account_name: admin
 drupal_account_pass: admin
 
@@ -215,7 +249,7 @@ extra_packages:
 # You can configure almost anything else on the server in the rest of this file.
 extra_security_enabled: false
 
-drush_version: "8.x"
+drush_version: "8.1.15"
 drush_keep_updated: true
 drush_composer_cli_options: "--prefer-dist --no-interaction"
 
